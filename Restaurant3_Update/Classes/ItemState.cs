@@ -4,6 +4,7 @@
     {
         Requested,
         Obtained,
+        Cooked, 
         Served
     }
 }

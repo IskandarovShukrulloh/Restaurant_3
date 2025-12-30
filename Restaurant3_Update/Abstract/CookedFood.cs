@@ -17,9 +17,12 @@ namespace Restaurant_3.Abstract
         // Cooking step (child classes can override if needed)
         public virtual void Cook()
         {
-
+            if (State == ItemState.Obtained)
+            {
+                State = ItemState.Cooked;
+            }
         }
-
+        
         // Prepared food is served to customer
         public virtual void Serve()
         {
